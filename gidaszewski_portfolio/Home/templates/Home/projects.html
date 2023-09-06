@@ -1,0 +1,101 @@
+{% extends 'Home/base.html' %}
+
+{% block all %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <body class="d-flex flex-column h-100 bg-black">
+        <main class="flex-shrink-0">
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Inceptia AI Test</h2>
+                                            <p>This project is a deliverable for an evaluation to get a job as a Python developer at an artificial intelligence company.
+                                                I was not selected for the position, but the company expressed their approval for the deliverable. I feel very satisfied with the code I developed and that's why I add this project to my Portfolio.
+                                                <a class="text-secondary" href="https://drive.google.com/file/d/1sGgJtJLt6R_j94cG71oJC9jYGNO8aqTY/view?usp=sharing" target="_blank">Assessment questions</a>
+                                                <a href="https://github.com/gidaszewski/INCEPTIA-IA-PROJECT" target="_blank">&middot; GitHub Project</a>
+                                            </p>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="logotipos">
+                                                <img style="width: 85%;" src="{% static 'Home/media/python.png' %}" alt="...">
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'Home/media/inceptia-image.png' %}" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Costa Río Paraná Website</h2>
+                                            <p>Costa Río Paraná is a company that produces sporting events such as marathons and trail races.
+                                                This website was developed so that the company can facilitate the registration to the events for the users.
+                                                This site helped CRP to get new runners thanks to its user-friendly design and interface.
+                                                In this project I worked together with a QA and a backend developer.
+                                                <a href="https://github.com/gidaszewski/webcrp" target="_blank">GitHub Project</a>
+                                            </p>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="logotipos">
+                                                <img class="mb-4" style="width: 85%;" src="{% static 'Home/media/django-logo-negative.png' %}" alt="...">
+                                                <img class="mb-3" style="width: 80%;" src="{% static 'Home/media/python.png' %}" alt="...">
+                                                <img style="width: 85%;" src="{% static 'Home/media/htmlcss.png' %}" alt="...">
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'Home/media/crp-image.png' %}" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 project-card">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">URL Shortener</h2>
+                                            <p>Shorty is a personal project. It is a tool to shorten very long links.
+                                                I developed this application using Python, Django, HTML and CSS.</p>
+                                                <a href="https://github.com/gidaszewski/URL-Shortener" target="_blank">GitHub Project</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="logotipos">
+                                                <img class="mb-4" style="width: 85%;" src="{% static 'Home/media/django-logo-negative.png' %}" alt="...">
+                                                <img class="mb-3" style="width: 80%;" src="{% static 'Home/media/python.png' %}" alt="...">
+                                                <img style="width: 85%;" src="{% static 'Home/media/htmlcss.png' %}" alt="...">
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'Home/media/shorty-image.png' %}" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'contact' %}">Contact me</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="{% static 'Home/js/scripts.js' %}"></script>
+    </body>
+</html>
+{% endblock %}

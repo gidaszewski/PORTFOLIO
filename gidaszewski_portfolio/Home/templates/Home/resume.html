@@ -1,0 +1,224 @@
+{% extends 'Home/base.html' %}
+
+{% block all %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <body class="d-flex flex-column h-100 bg-black">
+        <main class="flex-shrink-0">
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4 project-card">
+                                <h2 class="text-white fw-bolder mb-0">Experience</h2>
+                                <!-- Download resume button-->
+                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <a class="btn btn-secondary px-4 py-3" href="https://drive.google.com/file/d/1VrT_DNqhZxrW9_XU2Q81FaqaNMDFOmX2/view?usp=sharing" target="_blank">
+                                    <div class="d-inline-block bi bi-download me-2"></div>
+                                    Download Resume
+                                </a>
+                            </div>
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5 project-card">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2022 - Present</div>
+                                                <div class="small fw-bolder">Web Developer</div>
+                                                <div class="small text-muted">CRP Argentina</div>
+                                                <div class="small text-muted">Entre Ríos, Argentina</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>I developed a web application that helped a sports event production company to get more audience and facilitate marathon registrations.</div>
+                                            <div class="text-primary">Stack: Python, Django REST, Linux, SSH, Nginx, MySQL.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5 project-card">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2023 - Aug 2023</div>
+                                                <div class="small fw-bolder">Web Developer</div>
+                                                <div class="small text-muted">ARM Services</div>
+                                                <div class="small text-muted">Santiago de Chile, Chile</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>Maintenance of a website that was not working, with failures in the database and in the themes.</div>
+                                            <div class="text-primary">Stack: PHP, FTP, SQL, Wordpress.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 3-->
+                            <div class="card shadow border-0 rounded-4 mb-5 project-card">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2023 - Jul 2023</div>
+                                                <div class="small fw-bolder">Data Engineer</div>
+                                                <div class="small text-muted">Argentina Open Data</div>
+                                                <div class="small text-muted">Argentina</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>Using the Argentinian open data portal, I created an ETL pipeline to find trends over dollar exchange.</div>
+                                            <div class="text-primary">Stack: Python, Docker, Pandas, Amazon Redshift, Postgres.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education Section-->
+                        <section>
+                            <h2 class="text-white fw-bolder mb-4">Education</h2>
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2021 - 2023</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Universidad Nacional Del Litoral</div>
+                                                    <div class="small text-muted">Santa Fe, Argentina</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Degree</div>
+                                                    <div class="small text-muted">Industrial Engineering</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>After finishing my school studies I started a career in Industrial Engineering, where I was able to learn a lot about mathematics, flow charts, physics and industrial processes.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2022 - 2022</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Coderhouse</div>
+                                                    <div class="small text-muted">Buenos Aires, Argentina</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Bootcamp</div>
+                                                    <div class="small text-muted">Python Programming</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>In this bootcamp I learned the basics of programming.  I incorporated the necessary knowledge about Class-Based-View, login - register - accounts, CRUD and modelforms to develop a website using the Django framework.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 3-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2023 - 2023</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Coderhouse</div>
+                                                    <div class="small text-muted">Buenos Aires, Argentina</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Bootcamp</div>
+                                                    <div class="small text-muted">Data Engineer</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>I studied the concepts and practices of handling large amounts of data through extraction, transformation and loading (ETL) processes. At the same time, I learned to design and manage a Data Warehousing architecture applying the most used technologies in the market. I implemented data management processes using the Python language, making use of the Pandas and SQLAlchemy libraries.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 4-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2023 - 2025</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">TECLAB Institute</div>
+                                                    <div class="small text-muted">Buenos Aires, Argentina</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Master's in</div>
+                                                    <div class="small text-muted">Software Development</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>I am currently internalizing in software development, studying about the C++ programming language. In this master I will learn about design patterns, logic and algorithms, unit testing, software development with continuous integration and programming for mobile devices using JAVA.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <section>
+                            <!-- Skillset Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <!-- Professional skills list-->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Skills</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web & Software Development</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Scalable coding</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Passion for teaching</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Empathy</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Collective property</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Initiatives to hangout with the team</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Languages list-->
+                                    <div class="mb-0">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C++</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
+{% endblock %}
+

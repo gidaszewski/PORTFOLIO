@@ -1,0 +1,49 @@
+{% extends 'Home/base.html' %}
+
+{% block all %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Page content-->
+            <section class="py-5 bg-black">
+                <div class="container px-5 my-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">Mail sent successfully</h1>
+                            <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <div class="d-grid"><a class="btn btn-primary btn-lg" href="{% url 'home' %}">Back to home</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section-->
+            <section class="bg-black py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                                <p class="lead fw-light mb-4 text-white">I am a junior backend developer from Argentina.</p>
+                                <p class="text-muted">I have 1 year of experience working with the model- template-view architectural pattern of the Django framework. I possess a strong foundation in Python and have utilized various libraries for software development and data engineering</p>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
+                                    <a class="text-gradient" href="https://www.linkedin.com/in/franco-gidaszewski/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="https://github.com/gidaszewski" target="_blank"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
+{% endblock %}
