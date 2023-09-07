@@ -3375,7 +3375,7 @@ fieldset:disabled .btn {
   --bs-btn-disabled-border-color: #e21e80;
 }
 
-.btn-secondary-home {
+.btn-secondaryhome {
   --bs-btn-color: #000;
   --bs-btn-bg: #1afa38;
   --bs-btn-border-color: #1afa38;
